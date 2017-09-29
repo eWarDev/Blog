@@ -5,14 +5,15 @@ namespace eWar\Blog\Controller;
 use eWar\Blog\Connector\ArticleConnector;
 use eWar\Blog\Connector\UserConnector;
 use eWar\Framework\Connector\ConnectorPool;
-use eWar\Framework\Rendering\PageControllerInterface;
+use eWar\Framework\Http\RequestObject;
 use eWar\Framework\Rendering\Renderer\RendererInterface;
+use eWar\Framework\Rendering\ViewControllerInterface;
 
 /**
  * Class ArticleController
  * @package eWar\Blog\Controller
  */
-class ArticleController implements PageControllerInterface
+class ArticleController implements ViewControllerInterface
 {
     /**
      * @var ArticleConnector
@@ -64,12 +65,13 @@ class ArticleController implements PageControllerInterface
      * showArticle
      *
      * @param RendererInterface $renderer
-     * @param array             $requestData
+     * @param RequestObject     $requestData
      */
-    public function showArticle(RendererInterface $renderer, array $requestData) : void
+    public function showArticle(RendererInterface $renderer, RequestObject $requestData) : void
     {
-        $article = $this->articleConnector->getArticleById($requestData['id']);
-        
+        $payload = $requestData->getPayload();
+        $article = $this->articleConnector->getArticleById($payload['id']);
+
         if (! $article->getId()) {
             $renderer->throwError(404);
         }
