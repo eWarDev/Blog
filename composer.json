@@ -1,5 +1,6 @@
 {
   "name": "ewar/blog",
+  "version": "0.1.1",
   "description": "A simple Blog based on eWars Framework",
   "keywords": [
     "blog"
@@ -19,8 +20,8 @@
   },
   "repositories": [
     {
-      "type": "vcs",
-      "url": "https://github.com/eWarDev/Framework.git"
+      "url": "https://github.com/eWarDev/Framework.git",
+      "type": "vcs"
     }
   ],
   "require": {
