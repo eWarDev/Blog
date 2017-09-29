@@ -4,14 +4,14 @@ namespace eWar\Blog\Controller;
 
 use eWar\Blog\Connector\ArticleConnector;
 use eWar\Framework\Connector\ConnectorPool;
-use eWar\Framework\Rendering\PageControllerInterface;
 use eWar\Framework\Rendering\Renderer\RendererInterface;
+use eWar\Framework\Rendering\ViewControllerInterface;
 
 /**
  * Class IndexController
  * @package eWar\Blog\Controller
  */
-class IndexController implements PageControllerInterface
+class IndexController implements ViewControllerInterface
 {
     /**
      * @var ArticleConnector

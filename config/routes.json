@@ -4,8 +4,8 @@
     "method": "GET",
     "output": {
       "controller": "eWar\\Blog\\Controller\\IndexController",
-      "action": "showBlog",
-      "type": "page"
+      "type": "eWar\\Framework\\Rendering\\Renderer\\PageRenderer",
+      "action": "showBlog"
     }
   },
   "article": {
@@ -13,8 +13,8 @@
     "method": "GET",
     "output": {
       "controller": "eWar\\Blog\\Controller\\ArticleController",
-      "action": "showArticle",
-      "type": "page"
+      "type": "eWar\\Framework\\Rendering\\Renderer\\PageRenderer",
+      "action": "showArticle"
     },
     "types": {
       "id": "int"

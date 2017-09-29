@@ -1,5 +1,6 @@
 {
   "name": "ewar/blog",
+  "version": "0.1",
   "description": "A simple Blog based on eWars Framework",
   "keywords": [
     "blog"
