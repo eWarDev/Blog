@@ -1,0 +1,5 @@
+vendor
+composer.lock
+htdocs/css/*.css
+.idea
+config/database.json

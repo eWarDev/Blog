@@ -1,0 +1,29 @@
+{
+  "name": "ewar/blog",
+  "description": "A simple Blog based on eWars Framework",
+  "keywords": [
+    "blog"
+  ],
+  "homepage": "https://ewar.eu",
+  "license": "GNU General Public License v3.0",
+  "authors": [
+    {
+      "name": "Florian Maak",
+      "email": "fmaak@outlook.de"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "eWar\\Blog\\": "src/eWar/Blog"
+    }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/eWarDev/Framework.git"
+    }
+  ],
+  "require": {
+    "ewar/framework": "dev-master"
+  }
+}

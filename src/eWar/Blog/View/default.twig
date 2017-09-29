@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ pagetitle|e }}</title>
+
+    <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link href="/css/general.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/header.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/footer.css" rel="stylesheet" type="text/css"/>
+
+    {% block head %}{% endblock %}
+</head>
+<body>
+<header>
+    {% block header %}{% endblock %}
+
+    <nav>
+        <ul>
+            <li><a href="/">Blog</a></li>
+            <li><a href="/">Produkte</a></li>
+            <li><a href="/">Downloads</a></li>
+            <li><a href="/">Onlinetools</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+<footer>
+    {% block footer %}{% endblock %}
+</footer>
+
+<div id="backtotup"></div>
+</body>
+</html>

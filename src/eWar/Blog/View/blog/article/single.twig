@@ -1,0 +1,61 @@
+{% extends "default.twig" %}
+{% import "macros.twig" as macro %}
+{% block head %}
+    <link href="/css/article.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/socialmedia.css" rel="stylesheet" type="text/css"/>
+{% endblock %}
+
+{% block content %}
+    <section class="additional">
+        <ul class="breadcrumbs">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li class="active"><a href="#">Frameworks</a></li>
+        </ul>
+    </section>
+    <article>
+        <aside>
+            <time datetime="2017-09-01 20:00">01.09.2017 - 20:00 Uhr</time>
+            - {{ author.getName()|e }}
+        </aside>
+        <h1>{{ article.getTitle()|e }}</h1>
+
+        <p>{{ article.getContent()|e }}</p>
+    </article>
+
+    <section class="socialmedia">
+        {{ macro.socialmedia() }}
+    </section>
+
+    <section class="comment-section">
+        <div class="headline">Kommentare</div>
+
+        <ul id="comments">
+            <li>
+                <div class="meta">
+                    <span class="datetime">01.09.2017 - 20:00 Uhr</span>
+                    <span class="user">Florian Maak</span>
+                    <span class="rating">+10</span>
+                </div>
+                <div class="content">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                    massa.
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+                    felis,
+                    ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede
+                    justo,
+                    fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis
+                    vitae,
+                    justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus
+                    elementum semper
+                    nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend
+                    ac, enim.
+                    Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus
+                    varius
+                    laoreet.
+                </div>
+            </li>
+        </ul>
+    </section>
+
+{% endblock %}

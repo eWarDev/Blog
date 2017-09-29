@@ -1,0 +1,63 @@
+article {
+  margin: 40px 0;
+  line-height: 150%;
+
+  h1 {
+    margin-top: 5px;
+    margin-bottom: 40px;
+    font-size: 28px;
+  }
+
+  aside {
+    color: #ccc;
+    font-size: 14px;
+  }
+}
+
+.comment-section {
+  .headline {
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #ddd;
+  }
+
+  .headline,
+  .user,
+  .rating {
+    font-weight: 300;
+  }
+
+  .meta {
+    display: flex;
+    color: #ccc;
+    margin-bottom: 5px;
+
+    .rating {
+      flex-grow: 1;
+      margin-left: 20px;
+    }
+  }
+}
+
+.additional {
+  .breadcrumbs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    > li {
+      display: inline-block;
+      padding: 5px 10px;
+
+      &:not(:last-child) {
+        border-right: 1px solid #ccc;
+      }
+
+      &.active a {
+        color: #000;
+      }
+    }
+  }
+}
+

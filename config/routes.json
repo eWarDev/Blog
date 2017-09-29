@@ -1,0 +1,23 @@
+{
+  "index": {
+    "route": "/",
+    "method": "GET",
+    "output": {
+      "controller": "eWar\\Blog\\Controller\\IndexController",
+      "action": "showBlog",
+      "type": "page"
+    }
+  },
+  "article": {
+    "route": "article/{id}",
+    "method": "GET",
+    "output": {
+      "controller": "eWar\\Blog\\Controller\\ArticleController",
+      "action": "showArticle",
+      "type": "page"
+    },
+    "types": {
+      "id": "int"
+    }
+  }
+}

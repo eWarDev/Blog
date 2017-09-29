@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #eee;
+
+  main {
+    padding: 40px 60px;
+    margin: 0 auto -1px;
+    background-color: #fff;
+    width: 980px;
+    border: 1px solid #ccc;
+    border-bottom-color: #fff;
+    border-top: none;
+    z-index: 3;
+  }
+
+  a {
+    color: #666;
+    text-decoration: none;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  #backtotup {
+    padding: 15px;
+    font-size: 22px;
+    position: fixed;
+    right: 40px;
+    cursor: pointer;
+    bottom: 40px;
+    background-color: #fff;
+    color: #ccc;
+    border: 1px solid #ccc;
+
+    &:before {
+      content: '\f077';
+      font-family: 'FontAwesome', sans-serif;
+    }
+  }
+}

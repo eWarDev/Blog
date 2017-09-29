@@ -1,0 +1,100 @@
+.socialmedia {
+  margin-bottom: 40px;
+
+  ul {
+    display: flex;
+
+    > li {
+      flex-grow: 1;
+      cursor: pointer;
+      padding: 15px 20px;
+
+      &:hover {
+        opacity: .8;
+      }
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      &:before {
+        font-family: 'FontAwesome', sans-serif;;
+        margin-right: 10px;
+      }
+
+      &.facebook {
+        background-color: #3b5998;
+        color: #fff;
+
+        &:before {
+          content: '\f09a';
+        }
+      }
+
+      &.twitter {
+        background-color: #1da1f2;
+        color: #fff;
+
+        &:before {
+          content: '\f099';
+        }
+      }
+
+      &.instagram {
+        background-color: #405de6;
+        color: #fff;
+
+        &:before {
+          content: '\f16d';
+        }
+      }
+
+      &.mail {
+        background-color: #999;
+        color: #fff;
+
+        &:before {
+          content: '\f003';
+        }
+      }
+
+      &.count {
+        flex-grow: 0;
+        border: 1px solid #ccc;
+        position: relative;
+        margin-right: 15px;
+        padding: 15px 20px;
+
+        &:after {
+          content: ' ';
+          width: 0;
+          height: 0;
+          border-top: 10px solid transparent;
+          border-bottom: 10px solid transparent;
+          border-left: 10px solid #ccc;
+          border-right: -5px solid transparent;
+          line-height: 0;
+          position: absolute;
+          font-size: 0;
+          right: -10px;
+        }
+
+        &:before {
+          content: ' ';
+          width: 0;
+          height: 0;
+          border-top: 9px solid transparent;
+          border-bottom: 9px solid transparent;
+          border-left: 9px solid #fff;
+          border-right: -5px solid transparent;
+          line-height: 0;
+          position: absolute;
+          font-size: 0;
+          z-index: 300;
+          right: -18px;
+          margin-top: 1px;
+        }
+      }
+    }
+  }
+}

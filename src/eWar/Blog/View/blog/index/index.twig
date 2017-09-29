@@ -1,0 +1,19 @@
+{% extends "default.twig" %}
+{% block head %}
+    <link href="/css/index.css" rel="stylesheet" type="text/css"/>
+{% endblock %}
+
+{% block content %}
+
+    {% for article in articles %}
+        <section>
+            <h2>
+                <a href="/article/{{ article.getId() }}">{{ article.getTitle()|e }}</a>
+            </h2>
+
+            <div class="summary">
+                {{ article.getSummary()|e }}
+            </div>
+        </section>
+    {% endfor %}
+{% endblock %}
