@@ -20,11 +20,11 @@
   },
   "repositories": [
     {
-      "type": "vcs",
-      "url": "https://github.com/eWarDev/Framework.git"
+      "url": "https://github.com/eWarDev/Framework.git",
+      "type": "git"
     }
   ],
   "require": {
-    "ewar/framework": "dev-master"
+    "ewar/framework": "~0.2.2"
   }
 }
